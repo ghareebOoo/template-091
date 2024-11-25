@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .shape{
+        @apply before:absolute before:w-0 before:bottom-[-5px] before:bg-white before:h-1 before:hover:w-full before:transition-all before:duration-1000
+    }
+    .discFont{
+        @apply absolute cursor-pointer text-white font-bold transition-all duration-100 group-hover:text-black bottom-1 left-1 md:bottom-6 md:left-4
+    }
+    .discOpa{
+        @apply before:absolute before:bg-[#ddd] before:w-full before:h-full before:top-0 before:opacity-0 before:transition-all hover:before:opacity-55 hover:before:top-0 before:duration-1000
+    }
+}

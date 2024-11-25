@@ -1,0 +1,10 @@
+
+.card :global(.gap){
+    gap: 20px;
+}
+
+@media(min-width: 768px){
+    :global(.width-gap){
+        width: calc(calc(100% - 20px* 3) / 4);
+    }
+}
